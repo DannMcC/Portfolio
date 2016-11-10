@@ -3,6 +3,142 @@ html {
 }
 
 body {
+
+}
+
+.header {
+  background-image: url(./images/space.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 500px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: -2;
+}
+
+.profile img {
+  position: absolute;
+  top: 100px;
+  left: 210px;
+  max-width: 150px;
+  border-radius: 5px;
+}
+
+.quotebox {
+  background-color: white;
+  position: absolute;
+  border-radius: 4px;
+  padding-left: 170px;
+  padding-top: 75px;
+  padding-right: 300px;
+  bottom: 340px;
+  left: 375px;
+  opacity: 0.5;
+}
+
+.header h1 {
+  position: absolute;
+  top: 90px;
+  left: 385px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
   margin: 0;
-  font: 16px / 1 sans-serif;
+  padding: 0;
+}
+
+.header h3 {
+  position: absolute;
+  top: 99px;
+  left: 385px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+}
+
+.quotebox img {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+}
+
+.projects ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+  position: relative;
+  bottom: 170px;
+}
+
+.projects ul::after {
+  content: '';
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.projects li {
+  background: transparent;
+}
+
+.projects li img {
+  border-radius: 4px;
+  max-width: 200px;
+  position: relative;
+  width: 200px;
+  height: 150px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arbutus+Slab');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html {
+  min-height: 100%;
+}
+
+article {
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+}
+
+article div {
+  padding: 1em;
+}
+
+article header {
+  background-color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px 4px 0 0;
+  height: 50px;
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+.more {
+  background-color: hsl(200, 80%, 75%);
+  padding: 10px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
+  border: 1px solid hsl(200, 60%, 50%);
+  border-radius: 4px;
+}
+
+.more:link,
+.more:visited {
+  color: white;
+  text-decoration: none;
 }
