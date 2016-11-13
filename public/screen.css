@@ -1,63 +1,65 @@
 html {
   text-size-adjust: 100%;
+  min-height: 100%;
 }
 
 body {
-
+  background-color: #091d26;
 }
 
-.header {
+.upperpart {
   background-image: url(./images/space.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 500px;
+  margin: -10px;
   margin-bottom: 10px;
-  position: relative;
-  z-index: -2;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
 .profile img {
-  position: absolute;
-  top: 100px;
-  left: 210px;
   max-width: 150px;
-  border-radius: 5px;
+  border-radius: 25px;
+  margin-top: 100px;
+  margin-left: 100px;
+  padding: 20px;
 }
 
-.quotebox {
+.header-greeting {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin-top: 70px;
+  margin-bottom: 150px;
+  padding-left: 5px;
   background-color: white;
-  position: absolute;
-  border-radius: 4px;
-  padding-left: 170px;
-  padding-top: 75px;
-  padding-right: 300px;
-  bottom: 340px;
-  left: 375px;
+  border-radius: 5px;
   opacity: 0.5;
 }
 
 .header h1 {
-  position: absolute;
-  top: 90px;
-  left: 385px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
+  font-size: 20px;
   margin: 0;
   padding: 0;
 }
 
 .header h3 {
-  position: absolute;
-  top: 99px;
-  left: 385px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
+  margin-top: 10px;
 }
 
 .quotebox img {
-  position: absolute;
-  top: 75px;
-  left: 20px;
+  position: relative;
+  bottom: -23px;
+  left: 10px;
 }
 
 .projects ul {
@@ -65,21 +67,18 @@ body {
   flex-direction: row;
   list-style-type: none;
   justify-content: space-around;
-  position: relative;
-  bottom: 170px;
 }
 
-.projects ul::after {
+/* .projects ul::after {
   content: '';
-  background-color: black;
-  opacity: 0.5;
+  background-color: blue;
+  opacity: 0.2;
   position: absolute;
-  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: -1;
-}
+} */
 
 .projects li {
   background: transparent;
@@ -88,16 +87,8 @@ body {
 .projects li img {
   border-radius: 4px;
   max-width: 200px;
-  position: relative;
   width: 200px;
   height: 150px;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Arbutus+Slab');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-
-html {
-  min-height: 100%;
 }
 
 article {
@@ -123,17 +114,51 @@ article header {
 }
 
 article h3 {
+  font-family: 'Noto serif', serif;
+  font-weight: 700;
   margin-top: 0;
+}
+
+article p {
+  font-family: 'Noto serif', serif;
+}
+
+.footer h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fbeded;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.footer li {
+  padding: 10px;
+}
+
+h6 {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fbeded;
 }
 
 .more {
   background-color: hsl(200, 80%, 75%);
+  font-family: 'Noto serif', sans-serif;
+  font-weight: 700;
   padding: 10px;
-  font-weight: bold;
   position: absolute;
   right: 10px;
   bottom: -10px;
-  border: 1px solid hsl(200, 60%, 50%);
   border-radius: 4px;
 }
 
